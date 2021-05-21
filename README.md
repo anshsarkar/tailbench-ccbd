@@ -20,6 +20,61 @@ To execute the 5 applications these steps can be followed.
 
 The dataset is required by some of the applications in tailbench for testing. This dataset can be downloaded [here](http://tailbench.csail.mit.edu/tailbench.inputs.tgz)
 
+> Executing the applications
+
+Preferred operating system would be Ubuntu 18.04.
+The applications can be run either by using a global script present in the TailBench directory or each application can be built and run individually by running the scripts in each application directory.  It is preferred that we run each application individually for better error handling.
+
+Before executing any application we need to install some dependencies and make some changes to our config file.
+
+Execute the following in the specified order:
+
+```bash
+sudo apt-get install libboost-all-dev
+```
+
+```bash
+sudo apt-get install openjdk-8-jdk libopencv-dev autoconf ant libtcmalloc-minimal4 swig google-perftools bzip2 libnuma-dev libjemalloc-dev libgoogle-perftools-dev libdb5.3++-dev libmysqld-dev libaio-dev uuid-dev libbz2-dev python-numpy python-scipy libgtop2-dev
+```
+
+Now we go ahead and update our config file.
+```bash
+cd tailbench
+nano configs.sh
+```
+
+```env
+# Set this to point to the top level of the TailBench data directory
+#Set to the path of the directory for tailbench datasets called tailbench.inputs
+DATA_ROOT= /directoryfortailbenchinputs
+
+# Set this to point to the top level installation directory of the Java
+# Development Kit. Only needed for Specjbb
+# No need to change this
+JDK_PATH=/usr/lib/jvm/java-8-openjdk-amd64/
+
+# This location is used by applications to store scratch data during execution.
+# Copy the path to the scratch directory that was created earlier.
+SCRATCH_DIR= /pathtoscratchdirectory
+```
+
+> To run each individual application follow this:
+```bash
+cd applicationname
+sudo chmod +x build.sh
+sudo chmod +x cleam.sh
+sudo chmod +x run.sh
+```
+Then run these commands in this specific order:
+```bash
+sudo ./clean.sh
+sudo ./build.sh
+```
+
+One build successfully without any errors (warnings can be ignored):
+```bash
+sudo ./run.sh
+```
 Applications
 ============
 
