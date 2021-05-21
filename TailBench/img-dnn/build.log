@@ -1,0 +1,7 @@
+g++ -g -O3 -I/usr/include/opencv -std=c++0x -I../harness img-dnn.cpp -c -o img-dnn.o
+g++ -g -O3 -I/usr/include/opencv -std=c++0x -I../harness common.cpp -c -o common.o
+g++ -g -O3 -I/usr/include/opencv -std=c++0x -I../harness client.cpp -c -o client.o
+g++ -g -O3 -I/usr/include/opencv -std=c++0x -I../harness train.cpp -c -o train.o
+Makefile:22: recipe for target 'train.o' failed
+Makefile:19: recipe for target 'common.o' failed
+Makefile:25: recipe for target 'img-dnn.o' failed
