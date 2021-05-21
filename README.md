@@ -1,4 +1,4 @@
-# TailBench-CCBD
+# tailbench-ccbd
 
 This repository has 5 out of 8 tailbench applications building and running successfully. These applications are `img-dnn`, `masstree`, `silo`, `specjbb` and `sphinx`.
 
@@ -210,3 +210,7 @@ Since SPECjbb is not freely available, we do not include it in the TailBench
 distribution. Instead, the specjbb directory contains a patch file
 (tailbench.patch) that can be applied to a pristine copy of SPECjbb2005 to
 obtain the version used in the TailBench paper.
+
+# Acknowledgement
+
+This project was carried out under the guidance of Dr K V Subramaniam, Professor of CSE at PES University as a part of the Center for Cloud Computing and Big Data Summer Internship Programme 2020. 
