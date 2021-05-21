@@ -51,7 +51,7 @@ described in the README files within application directories where applicable.
 
 # Environment Variables
 
-```bash
+```
 TBENCH_WARMUPREQS (application): Length of the warmup period in # requests. No
 latency measurements are performed during this period.
 
