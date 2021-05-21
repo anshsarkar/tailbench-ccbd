@@ -12,7 +12,7 @@ import shutil
 
 appThreads = {'img-dnn':2, 'masstree':3, 'silo':3}
 
-files = [i for i in os.listdir('.') if i.endswith('.txt')]
+files = [i for i in os.listdir('../tailbench/') if i.endswith('.txt')]
 
 final_data = dict()
 
