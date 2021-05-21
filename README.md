@@ -18,7 +18,7 @@ To execute the 5 applications these steps can be followed.
     ├── tailbench.inputs                    # Dataset for tailbench (can be downloaded)
     └── scratch                             # Initially an empty directory
 
-The dataset is required by some of the applications in tailbench for testing. This dataset can be downloaded [here](tailbench.csail.mit.edu/tailbench.inputs.tgz)
+The dataset is required by some of the applications in tailbench for testing. This dataset can be downloaded [here](http://tailbench.csail.mit.edu/tailbench.inputs.tgz)
 
 Applications
 ============
