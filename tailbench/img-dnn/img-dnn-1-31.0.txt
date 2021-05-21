@@ -1,0 +1,7 @@
+TBENCH_MAXREQS = 10000
+TBENCH_WARMUPREQS = 5000
+TBENCH_MINSLEEPNS = 10000
+TBENCH_RANDSEED = 31493
+TBENCH_QPS = 500
+Read testX successfully, including 784 features and 10000 samples.
+Read testY successfully, including 10000 samples
